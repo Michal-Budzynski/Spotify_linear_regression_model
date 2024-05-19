@@ -1,5 +1,5 @@
 # When do songs go viral? - Czynniki wpływające na pozycję utworu w rankingu Spotify „Weekly Top Songs Global”
-[Available only in polish]
+Available only in polish
 ## Spis treści
 - [Opis projektu](#opis-projektu)
 - [Dane](#dane)
