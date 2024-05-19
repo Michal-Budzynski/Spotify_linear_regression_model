@@ -7,7 +7,6 @@
 - [Wyniki](#wyniki)
 - [Diagnostyka modelu](#diagnostyka-modelu)
 - [Wymagania](#wymagania)
-- [Instrukcja instalacji](#instrukcja-instalacji)
 - [Użycie](#użycie)
 - [Wkład](#wkład)
 - [Licencja](#licencja)
