@@ -13,7 +13,7 @@
 - [Licencja](#licencja)
 
 ## Opis projektu
-Projekt ten bada czynniki wpływające na popularność utworów muzycznych na platformie Spotify. Celem jest zidentyfikowanie cech utworów, które wpływają na ich pozycję w rankingu „Weekly Top Songs Global”.
+Projekt ten bada czynniki wpływające na popularność utworów muzycznych na platformie Spotify. Celem jest zidentyfikowanie cech utworów, które wpływają na ich pozycję w rankingu „Weekly Top Songs Global”. Projekt stworzony został w ramach kursu Ekonometrii prowadzonego na Wydziale Nauk Ekonomicznych Uniwersytetu Warszawskiego. Model został również nagrodzony w konkursie na najlepszy model ekonometryczny - organizowanym również w ramach wspomnianego kursu.
 
 ## Dane
 Analizowane dane pochodzą z platformy Spotify i obejmują utwory, które znalazły się w rankingu „Top 200 Weekly (Global)” w latach 2020-2021. Dodatkowo uwzględniono popularność utworów na TikTok oraz informacje o treściach oznaczonych jako wulgarne.
@@ -31,10 +31,7 @@ Analizowane dane pochodzą z platformy Spotify i obejmują utwory, które znalaz
 - **Valence**: Poziom pozytywności utworu
 
 ## Model
-Konstrukcja modelu opiera się na regresji liniowej, gdzie zmienną objaśnianą jest najwyższa pozycja utworu w rankingu. W modelu uwzględniono zmienne takie jak długość utworu, popularność na TikTok, oznaczenie utworu jako wulgarnego oraz poziom pozytywności.
-
-### Równanie modelu
-\[ \text{chart\_peak} = -40.736 + 22.129 \cdot \text{Duration} - 0.365 \cdot \text{TikTok} + 58.902 \cdot \text{Explicit} + 89.004 \cdot \text{Valence} - 112.217 \cdot \text{Explicit} \cdot \text{Valence} \]
+Konstrukcja modelu opiera się na regresji liniowej (metoda najmniejszych kwadratów), gdzie zmienną objaśnianą jest najwyższa pozycja utworu w rankingu. W modelu uwzględniono zmienne takie jak długość utworu, popularność na TikTok, oznaczenie utworu jako wulgarnego oraz poziom pozytywności.
 
 ## Wyniki
 - **R²**: 0.152
@@ -49,25 +46,14 @@ Model przeszedł testy na poprawność formy funkcyjnej, ale wykazał problemy z
 
 ## Wymagania
 - Python 3.7+
-- Jupyter Notebook
-- Biblioteki: pandas, numpy, statsmodels, matplotlib
-
-## Instrukcja instalacji
-1. Sklonuj repozytorium:
-    ```bash
-    git clone https://github.com/twoj-repozytorium.git
-    ```
-2. Zainstaluj wymagane biblioteki:
-    ```bash
-    pip install -r requirements.txt
-    ```
+- Jupyter Notebook lub JupyterLab Notebook
 
 ## Użycie
-1. Uruchom Jupyter Notebook:
-    ```bash
-    jupyter notebook
-    ```
-2. Otwórz i uruchom plik `Spotify_model.ipynb`.
+1. Sklonuj lub pobierz repozytorium.
+   
+2. Uruchom Jupyter Notebook lub JupyterLab Notebook.
+
+3. Otwórz i uruchom plik `Spotify_model.ipynb`.
 
 ## Wkład
 Wszelkie sugestie dotyczące ulepszeń projektu są mile widziane. Możesz otworzyć zgłoszenie lub utworzyć pull request.
