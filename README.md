@@ -2,6 +2,7 @@
 Available only in polish
 ## Spis treści
 - [Opis projektu](#opis-projektu)
+- [Narzędzia](#narzędzia)
 - [Dane](#dane)
 - [Model](#model)
 - [Wyniki](#wyniki)
@@ -14,6 +15,22 @@ Available only in polish
 ## Opis projektu
 Projekt ten bada czynniki wpływające na popularność utworów muzycznych na platformie Spotify. Celem jest zidentyfikowanie cech utworów, które wpływają na ich pozycję w rankingu „Weekly Top Songs Global”. Projekt stworzony został w ramach kursu Ekonometrii prowadzonego na Wydziale Nauk Ekonomicznych Uniwersytetu Warszawskiego. Model został również nagrodzony w konkursie na najlepszy model ekonometryczny - organizowanym również w ramach wspomnianego kursu.
 
+## Narzędzia
+W projekcie użyto następujących technik statystycznych, ekonometrycznych i uczenia maszynowego:
+- **Statystyka opisowa**: Analiza podstawowych statystyk zmiennych
+- **Regresja liniowa**: Modelowanie zależności między zmiennymi za pomocą metody najmniejszych kwadratów (OLS)
+- **Klasyczny Model Regresji Liniowej**: Ocena zgodności modelu z założeniami KMRL (Klasyczny Model Regresji Liniowej)
+- **Testy statystyczne**:
+  - Test Breusch-Pagan’a (homoskedastyczność)
+  - Test White’a (homoskedastyczność)
+  - Test Goldfeld-Quandt’a (homoskedastyczność)
+  - Test Breusch-Godfrey’a (autokorelacja reszt)
+  - Test Jarque-Bera (normalność rozkładu reszt)
+  - Test RESET (poprawność formy funkcyjnej)
+  - Test Chow’a (stabilność parametrów modelu)
+- **Macierz korelacji oraz Statystyka VIF**: Ocena współliniowości zmiennych
+- **Wizualizacja danych**: Wykresy rozrzutu, histogramy, wykresy reszt
+  
 ## Dane
 Analizowane dane pochodzą z platformy Spotify i obejmują utwory, które znalazły się w rankingu „Top 200 Weekly (Global)” w latach 2020-2021. Dodatkowo uwzględniono popularność utworów na TikTok oraz informacje o treściach oznaczonych jako wulgarne.
 
